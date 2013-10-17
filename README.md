@@ -1,5 +1,5 @@
-Projektskelett HT13
+Final Webpage Project WP-HT13
 ==================
 
-Ett tomt projekt som forkas för de som gör projekt i kursen. Kursen webbplats:
+This is the final project in Webbteknisk-introduktion. The link to the course website is:
 https://coursepress.lnu.se/kurs/webbteknisk-introduktion/
