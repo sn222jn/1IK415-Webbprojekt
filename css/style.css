@@ -1,0 +1,201 @@
+/* COLORS
+ -------------------------------------------- */
+/* Orange hues */
+Headings: #FF7400
+BF7130
+A64B00
+FF9640
+FFB273
+
+/* Blue hues */
+03899C
+1F6B75
+015965
+36BBCE
+Nav item: #5FC0CE
+
+Footer: #BABAB2
+Gray: #E9E9DF
+
+/* Font-face
+ ------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400,700);
+
+/* Body, container, content
+ ------------------------------------------- */
+body {
+    width: auto;
+    height: auto;
+}
+.container {
+
+    margin: auto;
+    height: auto;
+    width: 80%;
+    background-color: white;
+    
+}
+.content {
+    margin: auto;
+    height: auto;
+    width: 70%;
+}
+
+/* General setting
+-------------------------------------------------- */
+a {
+    text-decoration: none;
+}
+p {
+    padding: 1em 2em 1em 2em;
+    font-family: Georgia, serif;
+    letter-spacing: .1em;
+    color: gray;
+}
+    
+/* Left Column
+--------------------------------------------------*/
+.leftColumn {;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 0;
+    float: left;
+    width:60%;
+}
+
+/* Right Column
+--------------------------------------------------*/
+.rightColumn {
+    float: right;
+    width: 15%;
+    text-align: center;
+}
+
+/* Navigation menu
+ --------------------------------------------------- */
+#nav {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: .2em;
+
+}
+
+#nav > ul > li {
+    display: inline-block;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#nav > ul > li > a {
+    text-decoration: none;
+    color: #5FC0CE;
+    display: block;
+}
+#nav > ul > li > a:hover {
+    color: #1F6B75;
+
+}
+
+
+#nav > ul > li > ul {
+    display: none;
+}
+
+/* Header
+-------------------------------------------------- */
+header {
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    padding: 2em 1em 2em 1em; 
+    border-bottom: 1px solid #BABAB2;
+}
+#firstPageHeader {
+    margin-top: 20%;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;    
+    padding: 2em 1em 2em 1em;
+    border-top: 1px solid #BABAB2;
+    border-bottom: 1px solid #BABAB2;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+footer {
+    position: relative;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    padding-top: 1em;
+    overflow: hidden;
+    text-align: center;
+    color: #BABAB2;
+    border-top: 1px solid #BABAB2;    
+}
+footer ul li {
+    display: inline-block;
+    padding-right: 2em; 
+}
+
+/* Headings
+ ----------------------------- */
+h1, h2, h3, h4 {
+    font-family: Verdana, sans-serif;
+    color: #FF7A00;
+    text-align: center;
+    letter-spacing: .2em
+    
+}
+h1 {
+    font-size: 2em;
+}
+#firstPageHeader h1 {
+    font-size: 3em;
+    
+}
+
+/* HTML5 logo */
+#html5 {
+    height: auto;
+    width: 3em;
+}
+
+/* Project Images
+-------------------------------------------- */
+div.projectGallery {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid pink;
+    div.gallery 
+    text-align: center;
+
+}
+.projectImage {
+    margin: 1em;
+    width: 40%;
+    height: 13em;
+    display: inline-block;
+    float: left;
+
+    border: 1px solid gray;
+
+}
+ */
