@@ -16,7 +16,7 @@
         <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        
+
         <!-- Stylesheets -->
         <link rel="stylesheet" href="../css/style-reset.css" />
         <link href="../css/style.css" media="only Screen and (max-width: 480px)" rel="stylesheet" type="text/css">
@@ -24,10 +24,10 @@
     </head>
 
     <body>
-        
+
         <!-- Container wrapper -->
         <div class="container">
-            
+
             <!-- Navigation wrapper -->
             <nav id="nav">
                 <ul>
@@ -48,12 +48,91 @@
                     </li>
                 </ul>
             </nav>
-            
+
             <!-- Header wrapper -->
             <header>
                 <h1>Studio Sigma</h1>
             </header>
-            
+
+            <div class="content">
+                <h2>Contact Us</h2>
+                
+                <!-- Contact form wrapper -->
+                <div id="contact">
+
+                    <form action="%20http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" id="contact-form"
+                    method="post" name="contact-form">
+                        <input name="redirect" type="hidden" value="">
+
+                        <fieldset>
+                            <legend>
+                                Personal Details
+                            </legend>
+                            <p>
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" />
+                            </p>
+                            <p>
+                                <label for="secondName">Second Name</label>
+                                <input type="text" id="secondName" name="secondName" />
+                            </p>
+                            <p>
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" />
+                            </p>
+                            <p>
+                                <label for="email" >Email</label>
+                                <input type="email" id="email" name="email" />
+                            </p>
+                            <p>
+                                <label for="telephone">Telephone</label>
+                                <input type="tel" id="telephone" name="telephone" />
+                            </p>
+                        </fieldset>
+
+                        <fieldset class="radioButtons">
+                            <legend>
+                                Are you an existing client?
+                            </legend>
+
+                            <p>
+                                <input checked="checked" id="yes" name="contact" type="radio" value="yes">
+                                <label for="yes">Yes</label>
+                            </p>
+                            <p>
+                                <input id="no" name="contact" type="radio" value="no">
+                                <label for="no">No</label>
+                            </p>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>
+                                Subject
+                            </legend>
+
+                            <p>
+                                <select id="question" name="question">
+
+                                    <option value="newProject"> A new project </option>
+
+                                    <option value="currentProject"> A current project </option>
+
+                                    <option value="pastProject"> A past project </option>
+
+                                    <option value="other"> Other </option>
+                                </select>
+
+                            <p>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"></textarea>
+                            </p>
+                        </fieldset>
+
+                        <input id="submitButton" type="button" value="Send">
+                    </form>
+                </div>
+            </div>
+
             <!-- Footer wrapper -->
             <footer>
                 <ul>
@@ -61,18 +140,10 @@
                         Web Design: Sylvester Norrbjörk
                     </li>
                     <li>
-                        <img id="html5" src="../images/logos/HTML5CSS3Logos.svg" alt="HTML5 & CSS3 Logos">
-                    </li>
-                    <li>
                         &copy; All rights reserved
                     </li>
                 </ul>
             </footer>
-
-            <div>
-
-            </div>
-
 
         </div>
     </body>

@@ -14,11 +14,12 @@ FFB273
 36BBCE
 Nav item: #5FC0CE
 
-Footer: #BABAB2
+Footer:
+#BABAB2
 Gray: #E9E9DF
 
 /* Body, container, content
- ------------------------------------------- */
+------------------------------------------- */
 body {
     width: auto;
     height: auto;
@@ -28,17 +29,17 @@ body {
     margin: auto;
     height: auto;
     width: 100%;
-    background-color: white;    
+    background-color: white;
 }
 .content {
+    padding-top: 1em;
     margin: auto;
     height: auto;
     width: 100%;
-    border: 1px solid black;
 }
 
 /* General setting
--------------------------------------------------- */
+ -------------------------------------------------- */
 a {
     text-decoration: none;
 }
@@ -48,20 +49,19 @@ p {
     letter-spacing: .1em;
     color: gray;
 }
-    
+
 /* Left Column
---------------------------------------------------*/
+ --------------------------------------------------*/
 .leftColumn {
     padding-top: 2%;
     margin-top: 1em;
     margin-left: 0;
     float: left;
-    width:80%;
-
+    width: 80%;
 }
 
 /* Right Column
---------------------------------------------------*/
+ --------------------------------------------------*/
 .rightColumn {
     float: left;
     width: 15%;
@@ -81,7 +81,6 @@ p {
     text-transform: uppercase;
     font-size: 1em;
     letter-spacing: .2em;
-
 }
 
 #nav > ul > li {
@@ -96,23 +95,21 @@ p {
 }
 #nav > ul > li > a:hover {
     color: #1F6B75;
-
 }
-
 
 #nav > ul > li > ul {
     display: none;
 }
 
 /* Header
--------------------------------------------------- */
+ -------------------------------------------------- */
 header {
     margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     height: auto;
-    padding: 2em 1em 2em 1em; 
+    padding: 2em 1em 2em 1em;
     border-bottom: 1px solid #BABAB2;
 }
 #firstPageHeader {
@@ -120,18 +117,16 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    height: auto;    
+    height: auto;
     padding: 2em 1em 2em 1em;
     border-top: 1px solid #BABAB2;
     border-bottom: 1px solid #BABAB2;
 }
 
-
 /* Footer
--------------------------------------------------- */
+ -------------------------------------------------- */
 footer {
-    bottom: 0;
-    width: 80%;
+    width: 90%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -139,7 +134,12 @@ footer {
     padding-top: .3em;
     text-align: center;
     color: #BABAB2;
-    border-top: 1px solid #BABAB2;  
+    border-top: 1px solid #BABAB2;
+    background-image: url(images/HTML5CSS3Logos.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 2em;
+    background-size: 5em;
 }
 footer ul li {
     padding: .8em;
@@ -149,21 +149,20 @@ footer ul li {
  ----------------------------- */
 h1, h2, h3, h4 {
     font-family: Verdana, sans-serif;
-    color: #FF7A00;
+    color: #FF8A00;
     text-align: center;
     letter-spacing: .2em
-    
 }
 h1 {
     font-size: 2.2em;
 }
 h2 {
     font-size: 1.5em;
+    color: #0A67A3;
 }
 
 #firstPageHeader h1 {
     font-size: 3em;
-    
 }
 
 /* HTML5 & CSS3 logos */
@@ -174,9 +173,10 @@ h2 {
 }
 
 /* Project Images
--------------------------------------------- */
+ -------------------------------------------- */
 
 .projectGallery {
+    padding-top: 1em;
     margin: 0 auto;
     position: relative;
     width: 90%;
@@ -186,12 +186,12 @@ h2 {
 .projectGallery div {
     display: inline-block;
     text-align: center;
-    margin: 1em;    
+    margin: 1em;
 }
 .projectGallery img {
     display: inline-block;
-    width: 18em;
-    height: 10em;
+    width: 100%;
+    height: 100%;
     border: 1px solid gray;
     float: center;
 }
@@ -200,3 +200,51 @@ h2 {
     margin: 0 auto;
 }
 
+/* Contact form
+ --------------------------------------------------- */
+#contact {
+    margin: 1em;
+}
+
+fieldset {
+    border: 1px solid gray;
+    margin: 2em 0 .3em 0;
+}
+legend {
+    font-family: Georgia, serif;
+    text-align: center;
+    color: #1F6B75;
+    letter-spacing: .1em;
+}
+input, textarea, option, select {
+    font-family: Verdana;
+    color: #1F6B75;
+}
+label {
+    margin-bottom: 2px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    font-size: 1em;
+    width: 98%;
+    border: 1px solid gray;
+    padding: 4px;
+    display: block;
+    margin-top: 2px;
+}
+input[type="radio"] {
+    margin: 0 5px 0 0;
+}
+textarea {
+    height: 10em;
+    overflow: auto;
+    resize: none;
+}
+#submitButton {
+    font-size: 1.1em;
+    padding: .5em;
+    float: right;
+    width: 100%;
+    height: 10%;
+
+}
