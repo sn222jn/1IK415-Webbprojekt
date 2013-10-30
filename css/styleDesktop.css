@@ -17,11 +17,13 @@ Nav item: #5FC0CE
 Footer: #BABAB2
 Gray: #E9E9DF
 
+
 /* Body, container, content
  ------------------------------------------- */
 body {
     width: auto;
     height: auto;
+     background-image: url("images/HTML5CSS3Logos.svg");
 }
 .container {
 
@@ -54,9 +56,9 @@ p {
 .leftColumn {
     padding-top: 2%;
     margin-top: 1em;
-    margin-left: 0;
+    margin-left: 10%;
     float: left;
-    width:80%;
+    width:70%;
 
 }
 
@@ -117,6 +119,7 @@ header {
 }
 #firstPageHeader {
     margin-top: 20%;
+
     margin-left: auto;
     margin-right: auto;
     width: 60%;
@@ -132,17 +135,17 @@ header {
 footer {
     bottom: 0;
     width: 80%;
-    height: 100%;
+    height: auto;
+    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20%;
-    padding-top: .3em;
+    padding: 1em;
     text-align: center;
     color: #BABAB2;
     border-top: 1px solid #BABAB2;  
 }
 footer ul li {
-    padding: .8em;
+    display: inline-block;
 }
 
 /* Headings

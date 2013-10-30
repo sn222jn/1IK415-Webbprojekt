@@ -19,7 +19,8 @@
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="../css/style-reset.css" />
-        <link rel="stylesheet" href="../css/style.css" />
+        <link href="../css/style.css" media="only Screen and (max-width: 480px)" rel="stylesheet" type="text/css">
+        <link href="../css/styleDesktop.css" media="only Screen and (min-width: 481px)" rel="stylesheet" type="text/css">
 
     </head>
 
@@ -57,6 +58,7 @@
             <!-- Content wrapper -->
             <div class="leftColumn">
                 <section>
+                    <h2>About Us</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac augue ante. Maecenas dapibus magna tristique nulla posuere, at viverra nibh sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi blandit ipsum eu ligula egestas, quis volutpat leo sodales. Nunc blandit rutrum diam et luctus. Fusce quis mi at enim semper tempus. Etiam mattis, libero vitae adipiscing accumsan, lacus arcu rhoncus neque, non dapibus massa metus quis ligula. Integer rhoncus elementum justo eget faucibus. Mauris iaculis tristique dui. Ut consectetur, libero a semper facilisis, tortor odio tristique tortor, eget molestie enim mi eu quam. Proin nec ultricies mauris. Quisque lacus enim, congue vitae ipsum non, dignissim tincidunt dolor.
                     </p>
@@ -69,19 +71,29 @@
             <aside class="rightColumn">
                 <ul>
                     <li>
-                        <a href=""> <img src="../images/man1.jpg" alt="Portrait photo of person"> </a>
+                        <a href=""><img src="../images/man1.jpg" alt="Portrait photo of person">
+                        <br>
+                        Mr. Black</a>
                     </li>
                     <li>
-                        <a href=""> <img src="../images/man1.jpg" alt="Portrait photo of person"> </a>
+                        <a href=""> <img src="../images/man1.jpg" alt="Portrait photo of person">
+                        <br>
+                        Mr. Gray</a>
                     </li>
                     <li>
-                        <a href=""> <img src="../images/man1.jpg" alt="Portrait photo of person"> </a>
+                        <a href=""> <img src="../images/man1.jpg" alt="Portrait photo of person">
+                        <br>
+                        Mr. Brown</a>
                     </li>
                     <li>
-                        <a href=""> <img src="../images/woman.jpg" alt="Portrait photo of person"> </a>
+                        <a href=""> <img src="../images/woman.jpg" alt="Portrait photo of person">
+                        <br>
+                        Ms. White</a>
                     </li>
                 </ul>
             </aside>
+
+            <!-- Floating div hack -->
             <br style="clear: both;">
 
             <!-- Footer wrapper -->
@@ -91,7 +103,7 @@
                         Web Design: Sylvester Norrbjörk
                     </li>
                     <li>
-                        <img id="html5" src="../images/HTML5_Logo.svg" alt="HTML5 Logo">
+                        <img id="html5" src="../images/logos/HTML5CSS3Logos.svg" alt="HTML5 & CSS3 Logos">
                     </li>
                     <li>
                         &copy; All rights reserved

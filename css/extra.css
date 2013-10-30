@@ -1,0 +1,46 @@
+.projectGallery {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+.projectGallery a {    
+    text-align: center;
+    color: gray;
+    width: 18em;
+    float: left;
+    margin: 1em;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.1em;
+
+}
+.projectGallery img {
+    display: inline-block;
+    margin: 1em;
+    width: 18em;
+    height: 10em;
+    border: 1px solid gray;
+}
+.projectGallery a:after {
+    content: attr(title);
+}
+
+
+
+.projectGallery {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+.projectGallery img {
+    display: inline-block;
+    margin: 1em;
+    width: 18em;
+    height: 10em;
+    border: 1px solid gray;
+    float: center;
+}
