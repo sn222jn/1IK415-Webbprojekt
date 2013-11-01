@@ -10,55 +10,41 @@ FFB273
 /* Blue hues */
 03899C
 Nav hover: 1F6B75
+Form labels and text: 1F6B75;
 015965
 36BBCE
-Nav item: #5FC0CE
-H2 #FF7A00
-Footer:
-#BABAB2
-Gray:
-#E9E9DF
+Nav item: 5FC0CE
+H2: FF7A00
+Footer: BABAB2
+Gray: E9E9DF
 
 /* Body, container, content
 ------------------------------------------- */
 body {
     width: auto;
     height: auto;
-    background-image: url("images/HTML5CSS3Logos.svg");
 }
 .container {
     margin: auto;
     height: auto;
-    width: 100%;
+    width: 80%;
     background-color: white;
 }
 .content {
-    padding-top: 2em;
     margin: auto;
     height: auto;
     width: 100%;
-}
-
-/* General setting
- -------------------------------------------------- */
-a {
-    text-decoration: none;
-}
-p {
-    padding: 1em 2em 1em 2em;
-    font-family: Georgia, serif;
-    letter-spacing: .1em;
-    color: gray;
 }
 
 /* Left Column
  --------------------------------------------------*/
 .leftColumn {
-    padding-top: 2%;
+    padding: 0;
     margin-top: 1em;
     margin-left: 10%;
+    margin-right: 0;
     float: left;
-    width: 70%;
+    width: 65%;
 }
 
 /* Right Column
@@ -67,117 +53,61 @@ p {
     float: left;
     width: 15%;
     text-align: center;
+    margin-left: 5%;
 }
-
-/* Navigation menu
- --------------------------------------------------- */
-#nav {
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    width: 100%;
-    font-family: Helvetica, sans-serif;
+/* Project right column
+ ------------------------------------------------ */
+aside {
+    float: left;
+    width: 13%;
+    margin-top: 8%;
+    margin-left: 0;
+    padding: 1em 0 1em 0;
+    border-left: #BABAB2 1px dashed;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 1em;
-    letter-spacing: .2em;
 }
-
-#nav > ul > li {
-    display: inline-block;
-    padding: 1em 1em 0 1em;
+aside h4 {
+    padding: 0 0 .5em 0;
+    margin: 0;
 }
-
-#nav > ul > li > a {
-    text-decoration: none;
-    color: #5FC0CE;
-    display: block;
-}
-#nav > ul > li > a:hover {
-    color: #1F6B75;
-}
-
-#nav > ul > li > ul {
-    display: none;
+aside li {
+    padding: .8em .5em 0 .5em;
 }
 
 /* Header
  -------------------------------------------------- */
 header {
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: auto;
-    padding: 2em 1em 2em 1em;
-    border-bottom: 1px solid #BABAB2;
+    width: 70%;
+    background-size: 50%;
 }
-#firstPageHeader {
-    margin-top: 20%;
+#introPage {
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
     height: auto;
     padding: 2em 1em 2em 1em;
     border-top: 1px solid #BABAB2;
-    border-bottom: 1px solid #BABAB2;
+    text-align: center;
+    background: none;
+}
+#introPage img {
+    width: 100%;
 }
 
 /* Footer
  -------------------------------------------------- */
 footer {
-    width: 80%;
-    height: auto;
-    margin-top: 5em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2em;
-    text-align: center;
-    color: #BABAB2;
-    border-top: 1px solid #BABAB2;
-    background-image: url(images/HTML5CSS3Logos.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 5em;
+    margin-top: 7%;
 }
-footer ul li {
-    display: inline-block;
-    padding-top: 1em;
-}
-footer ul li:first-child {
+footer div {
     float: left;
-}
-footer ul li:nth-child(2n) {
-    float: right;
+    margin-left: 0;
+    margin-top: -5em;
 }
 
 /* Headings
  ----------------------------- */
-h1, h2, h3, h4 {
-    font-family: Verdana, sans-serif;
-    color: #FF8E00;
-    text-align: center;
-    letter-spacing: .2em
-}
-h1 {
-    font-size: 2.2em;
-}
-h2 {
-    font-size: 1.5em;
-    color: #0A67A3;
-}
-
-#firstPageHeader h1 {
-    font-size: 3em;
-}
-
-/* HTML5 & CSS3 logos */
-#html5 {
-    height: auto;
-    width: 6em;
-    position: bottom;
-}
 
 /* Project Images
  -------------------------------------------- */
@@ -187,18 +117,19 @@ h2 {
     position: relative;
     width: 90%;
     height: auto;
-    padding-top: 1em;
+    padding-top: 2em;
     text-align: center;
 }
 .projectGallery div {
+    padding-top: 1em;
     display: inline-block;
     text-align: center;
     margin: 1em;
 }
 .projectGallery img {
     display: inline-block;
-    width: 18em;
-    height: 10em;
+    width: 17em;
+    height: 12em;
     border: 1px solid gray;
     float: center;
 }
@@ -206,6 +137,12 @@ h2 {
     padding-top: 0;
     margin: 0 auto;
 }
+.imageContainer {
+    width: 17em;
+    height: 12em;
+    overflow: hidden;
+}
+
 /* Contact form
  --------------------------------------------------- */
 #contact {
@@ -217,41 +154,83 @@ fieldset {
     border: 1px solid gray;
     margin: 2em 0 .3em 0;
 }
-legend {
-    font-family: Georgia, serif;
-    text-align: center;
-    color: #1F6B75;
-    letter-spacing: .1em;
-}
-input, textarea, option, select {
-    font-family: Verdana;
-    color: #1F6B75;
-}
-label {
-    margin-bottom: 2px;
-}
 
 input[type="text"], input[type="email"], textarea {
     font-size: 1em;
-    width: 98%;
+    width: 90%;
     border: 1px solid gray;
-    padding: 4px;
     display: block;
-    margin-top: 2px;
+    padding: .3em;
 }
-input[type="radio"] {
-    margin: 0 5px 0 0;
-}
-textarea {
-    height: 10em;
-    overflow: auto;
-    resize: none;
-}
-#submitButton {
-    font-size: 1.1em;
-    padding: .5em;
-    float: right;
-    width: 100%;
-    height: 10%;
 
+/* Standards page layout
+ ------------------------------------ */
+.leftList {
+    padding-top: 1em;
+    width: 30%;
+    font-family: Georgia, serif;
+    color: #B18011;
+    margin: 1em 0 1em 2em;
+    font-size: 1em;
+    float: left;
 }
+.leftList li {
+    padding: .3em 0 .5em 0;
+    margin-left: 1em;
+    list-style: square;
+    list-style-type: square;
+}
+
+.middleColumn {
+    padding-top: 1em;
+    float: left;
+    width: 55%;
+}
+#institutionLogoStrip {
+    padding-top: 1em;
+    width: 5%;
+    float: left;
+}
+#institutionLogoStrip img {
+    width: 4em;
+}
+
+/* Image hover effect */
+/*
+.bwEffect img:hover {
+    cursor: pointer;
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    filter: grayscale(1);
+} */
+/*-----Hover Paragragh Effect-----*/
+.bwEffect img {
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+.bwEffect p {
+    position: absolute;
+    color: transparent;
+    font: 200 30px/187px 'Quicksand', Verdana, Helvetica, Arial, sans-serif;
+    background: transparent;
+    width: 272px;
+    height: 191px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+.bwEffect a:hover p {
+    color: white;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+/*-----Hover Scale Effect-----*/
