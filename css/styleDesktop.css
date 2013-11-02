@@ -40,7 +40,7 @@ body {
  --------------------------------------------------*/
 .leftColumn {
     padding: 0;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-left: 10%;
     margin-right: 0;
     float: left;
@@ -58,15 +58,17 @@ body {
 /* Project right column
  ------------------------------------------------ */
 aside {
-    float: left;
     width: 13%;
-    margin-top: 8%;
+    height: auto;
+    margin-top: 7%;
     margin-left: 0;
     padding: 1em 0 1em 0;
-    border-left: #BABAB2 1px dashed;
+    border-left: 1px dashed #BABAB2;
     text-align: center;
+    float: left;
 }
 aside h4 {
+    width: auto;height; autoM
     padding: 0 0 .5em 0;
     margin: 0;
 }
@@ -112,7 +114,7 @@ footer div {
 /* Project Images
  -------------------------------------------- */
 
-.projectGallery {
+.projectGallery, .separateProjects {
     margin: 0 auto;
     position: relative;
     width: 90%;
@@ -120,29 +122,31 @@ footer div {
     padding-top: 2em;
     text-align: center;
 }
-.projectGallery div {
+.projectGallery div, .separateProjects div {
     padding-top: 1em;
     display: inline-block;
     text-align: center;
     margin: 1em;
 }
-.projectGallery img {
+.projectGallery img, .separateProjects img {
     display: inline-block;
     width: 17em;
     height: 12em;
     border: 1px solid gray;
     float: center;
 }
-.projectGallery p {
+.projectGallery p, .separateProjects p {
     padding-top: 0;
     margin: 0 auto;
 }
 .imageContainer {
     width: 17em;
     height: 12em;
-    overflow: hidden;
 }
-
+.separateProjects {
+    margin-top: 25%;
+    padding-top: 0;
+}
 /* Contact form
  --------------------------------------------------- */
 #contact {
@@ -195,42 +199,39 @@ input[type="text"], input[type="email"], textarea {
     width: 4em;
 }
 
-/* Image hover effect */
-/*
-.bwEffect img:hover {
-    cursor: pointer;
-    -webkit-filter: grayscale(1);
-    -moz-filter: grayscale(1);
-    -o-filter: grayscale(1);
-    -ms-filter: grayscale(1);
-    filter: grayscale(1);
-} */
 /*-----Hover Paragragh Effect-----*/
-.bwEffect img {
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    -o-transition: all .6s ease-in-out;
-    -ms-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
+.projectGallery {
+    margin: 0 auto;
+
 }
-.bwEffect p {
+.projectTitle p {
     position: absolute;
     color: transparent;
-    font: 200 30px/187px 'Quicksand', Verdana, Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand', Verdana, Helvetica, Arial, sans-serif;
+    font-size: 2em;
     background: transparent;
-    width: 272px;
-    height: 191px;
+    width: 5.07em;
+    height: 3.5em;
     text-align: center;
     text-transform: uppercase;
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    -o-transition: all .6s ease-in-out;
-    -ms-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
+    margin: .5em 0 0 0;
+    padding-top: 2em;
+
 }
-.bwEffect a:hover p {
-    color: white;
-    background: rgba(0,0,0,0.7);
-    z-index: 1;
+.imageCaption p {
+    position: absolute;
+    color: transparent;
+    font-family: 'Quicksand', Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    background: transparent;
+    text-align: left;
+    width: 10em;
+    padding-top: .5em;
+    height: 10.6em;
+    margin: 2em 0 0 3em;
 }
-/*-----Hover Scale Effect-----*/
+.projectTitle img {
+    width: 18em;
+    height: 13em;
+    margin: 1em 0 0 0;
+}

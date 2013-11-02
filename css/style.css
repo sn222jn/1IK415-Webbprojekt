@@ -86,9 +86,6 @@ aside {
     margin: 95% 0 0 10%;
     text-align: center;
 }
-aside h4 {
-
-}
 aside li {
     display: inline-block;
     padding: .8em 2em 0 2em;
@@ -195,7 +192,13 @@ footer div {
 footer div img {
     padding: 0 .3em 0 .3em;
 }
-
+footer ul li:last-child {
+    height: 50px;
+    background-image: url(images/ccLogo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9em;
+}
 /* Headings
  ----------------------------- */
 h1, h2, h3, h4 {
@@ -228,37 +231,59 @@ h4 {
 
 /* Project Images
  -------------------------------------------- */
-
 .projectGallery {
-    padding-top: 2em;
-    margin: 0 auto;
-    position: relative;
-    width: 95%;
-    height: auto;
-    text-align: center;
-}
-.projectGallery div {
-    display: inline-block;
-    text-align: center;
-    margin: 1em;
-}
-.projectGallery img {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    border: 1px solid gray;
-    float: center;
-}
-.imageContainer {
-    width: 90%;
-    height: auto;
+    margin-top: 2em;
 }
 
-.projectGallery p {
-    padding: 0;
-    margin: 0 auto;
+/*-----Hover Paragragh Effect-----*/
+.projectTitle img, .projectTitle p, .imageCaption p {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.projectTitle p {
+    position: absolute;
+    color: transparent;
+    font-family: 'Quicksand', Verdana, Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    background: transparent;
+    width: 6em;
+    height: 3.5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1em 0 0 2em;
+    padding-top: 3em;
+}
+.imageCaption p {
+    position: absolute;
+    color: transparent;
+    font-family: 'Quicksand', Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    background: transparent;
+    text-align: left;
+    width: 12em;
+    height: 13em;
+    margin: 2em 0 0 3em;
 }
 
+.projectTitle a:hover p, .projectTitle a:focus, .imageCaption a:hover p {
+    color: white;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.projectTitle img {
+    width: 20em;
+    height: 15em;
+    margin: 2em 0 0 4em;
+}
+
+.imageCaption img {
+    width: 20em;
+    height: 15em;
+    margin: 2em 0 0 3em;
+}
 /* Contact form
  --------------------------------------------------- */
 #contact {
@@ -399,3 +424,17 @@ textarea {
 }
 
 /*-------------------------- */
+
+/* Image hover effect
+ .projectTitle img:hover {
+ cursor: pointer;
+ -webkit-filter: grayscale(1);
+ -moz-filter: grayscale(1);
+ -o-filter: grayscale(1);
+ -ms-filter: grayscale(1);
+ filter: grayscale(1);
+ } */
+
+/* Gallery captions
+ * -----------------------------------*/
+
