@@ -2,10 +2,10 @@
 
 // Information to be modified
 
-$your_email = "norrbjork@gmail.com"; // email address to which the form data will be sent
+$email = "norrbjork@gmail.com"; // email address to which the form data will be sent
 $subject = "Subject"; // subject of the email that is sent
 $thanks_page = "tack.html"; // path to the thank you page following successful form submission
-$contact_page = "contact.html"; // path to the HTML contact page where the form appears
+$contact_page = "pages/contact.html"; // path to the HTML contact page where the form appears
 
 
 // Nothing needs to be modified below this line
