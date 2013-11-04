@@ -325,6 +325,18 @@ input[type="tel"] {
     padding: 7px;
     border: 1px solid gray;
 }
+input[type="password"] {
+    margin-left: .4em;
+    width: 18em;
+    padding: 7px;
+    border: 1px solid gray;
+}
+#username[type="text"] {
+    display: inline;
+    width: 15em;
+    padding: 7px;
+    border: 1px solid gray;
+}
 ::-webkit-input-placeholder {/* WebKit browsers */
     color: #BABAB2;
 }
@@ -342,7 +354,7 @@ textarea {
     overflow: auto;
     resize: none;
 }
-#question {
+#subject {
     height: 2em;
 }
 #submitButton {
@@ -354,6 +366,26 @@ textarea {
     float: right;
     width: 100%;
     height: 10%;
+}
+#login {
+    float: right;
+    padding: .2em;
+    margin: 0 1em 1em 0;
+}
+
+/* Form results */
+p.error, p.success {
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid;
+}
+p.error {
+    background: #ffc0c0;
+    color: #900;
+}
+p.success {
+    background: #b3ff69;
+    color: #4fa000;
 }
 
 /* About Members
@@ -423,18 +455,15 @@ textarea {
     zoom: 1; /* IE < 8 */
 }
 
-/*-------------------------- */
-
-/* Image hover effect
- .projectTitle img:hover {
- cursor: pointer;
- -webkit-filter: grayscale(1);
- -moz-filter: grayscale(1);
- -o-filter: grayscale(1);
- -ms-filter: grayscale(1);
- filter: grayscale(1);
- } */
-
-/* Gallery captions
- * -----------------------------------*/
-
+/* Selection color
+ * ---------------------------------------- */
+::selection {
+    background: #841819; /* Safari */
+    color: white;
+    text-shadow: none;
+}
+::-moz-selection {
+    background: #841819; /* Firefox */
+    color: white;
+    text-shadow: none;
+}

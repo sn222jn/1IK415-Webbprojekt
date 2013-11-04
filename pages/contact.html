@@ -4,7 +4,7 @@
         <meta charset="utf-8">
 
         <title>Studio Sigma</title>
-        
+
         <meta name="author" content="Sylvester Norrbjörk">
 
         <meta name="viewport" content="width=device-width; initial-scale=1.0">
@@ -59,13 +59,29 @@
                 <h2>Contact Us</h2>
 
                 <!-- Contact form wrapper -->
-                <div id="contact">
+                <section id="contact">
 
-                    <form action="process.php" id="contact-form" method="post" name="contact-form">
-                        <input name="redirect" type="hidden" value="">
+                    <form action="sudinor.com/process.php" id="contact-form"
+                method="post" name="contact-form">
+                        <fieldset class="login">
+                            <legend align="center"><!-- firefox and ie don't support text-align on the legend tag in css -->
+                                Login
+                            </legend>
+
+                            <p>
+                                <label for="username">Username</label>
+                                <input type="text" placeholder="Enter your username" id="username" name="username" />
+                            </p>
+                            <p>
+                                 <label for="password">Password</label>
+                                <input type="password" placeholder="Enter your password" id="password" name="pasword" />
+                            </p>
+                            <input id="login" type="button" value="Login">
+                        </fieldset>
 
                         <fieldset>
                             <legend align="center">
+                                <!-- firefox and ie don't support text-align on the legend tag in css -->
                                 Contact Details
                             </legend>
                             <p>
@@ -74,7 +90,7 @@
                             </p>
                             <p>
                                 <label for="surname">Surname</label>
-                                <input class="contactName" type="text" placeholder="Enter your surname/last name" id="secondName" name="secondName" />
+                                <input class="contactName" type="text" placeholder="Enter your surname/last name" id="secondName" name="surname" />
                             </p>
                             <p>
                                 <label for="company">Company</label>
@@ -91,37 +107,23 @@
                             </p>
                         </fieldset>
 
-                        <fieldset class="radioButtons">
-                            <legend align="center">
-                                Already a client?
-                            </legend>
-
-                            <p>
-                                <input checked="checked" id="yes" name="contact" type="radio" value="yes">
-                                <label for="yes">Yes</label>
-                            </p>
-                            <p>
-                                <input id="no" name="contact" type="radio" value="no">
-                                <label for="no">No</label>
-                            </p>
-                        </fieldset>
-
                         <fieldset>
                             <legend align="center">
+                                <!-- firefox and ie don't support text-align on the legend tag in css -->
                                 Message
                             </legend>
 
                             <p>
                                 <label>Subject</label>
-                                <select id="question" name="question">
+                                <select id="question" name="subject">
 
-                                    <option value="newProject"> A new project </option>
+                                    <option value="newProject" name="newproject"> A new project </option>
 
-                                    <option value="currentProject"> A current project </option>
+                                    <option value="currentProject" name="currentproject"> A current project </option>
 
-                                    <option value="pastProject"> A past project </option>
+                                    <option value="pastProject" name="pastproject"> A past project </option>
 
-                                    <option value="other"> Other </option>
+                                    <option value="other" name="other"> Other </option>
                                 </select>
 
                             <p class="contactMessage">
@@ -132,7 +134,7 @@
 
                         <input id="submitButton" type="button" value="Send">
                     </form>
-                </div>
+                </section>
             </div>
 
             <!-- Footer wrapper -->
