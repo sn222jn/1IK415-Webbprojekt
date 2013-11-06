@@ -1,4 +1,3 @@
-
 # SIGMA Architecture
 Project member: 
 Sylvester Norrbjörk [sn222jn](https://github.com/sn222jn)
@@ -34,7 +33,7 @@ Since I will be using some kind of CMS I will probably have to have some kind of
 The studio doesn't have any website at present so I will be creating a complete new website for them, but they will show me websites that they like to give me an idea of what visual impact they want to make.
 
 ## Changes
-I am sure there will be changes...
+I did not integrate a CMS on the site firstly because I didn't have enough time to research CMS since I don't really know how it works. And secondly because CMS might affect SEO which obviously isn't good. So I have to find an alternative.
 
 ## Time schedule
 Here is a link to the Gantt chart with the project timeline (I used a Gantt template):
