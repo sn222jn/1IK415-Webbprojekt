@@ -166,6 +166,18 @@ input[type="text"], input[type="email"], textarea {
     display: block;
     padding: .3em;
 }
+input[type="password"] {
+    margin-left: .4em;
+    width: 18em;
+    padding: 7px;
+    border: 1px solid gray;
+}
+#username[type="text"] {
+    display: inline;
+    width: 15em;
+    padding: 7px;
+    border: 1px solid gray;
+}
 
 /* Standards page layout
  ------------------------------------ */

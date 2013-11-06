@@ -178,7 +178,7 @@ footer {
     background-image: url(images/HTML5CSS3Logos.svg);
     background-repeat: no-repeat;
     background-position: right;
-    background-position-y: 2em;
+    background-position-y: 3em;
     background-size: 3.5em;
 }
 footer ul li {
@@ -198,6 +198,11 @@ footer ul li:last-child {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 9em;
+}
+.socialNetworks {
+    margin: 0;
+    padding: 0;
+    float: center;
 }
 /* Headings
  ----------------------------- */
@@ -226,7 +231,6 @@ h4 {
 #html5 {
     height: auto;
     width: 6em;
-    position: bottom;
 }
 
 /* Project Images
@@ -249,11 +253,11 @@ h4 {
     font-family: 'Quicksand', Verdana, Helvetica, Arial, sans-serif;
     font-size: 2em;
     background: transparent;
-    width: 6em;
-    height: 3.5em;
+    width: 5em;
+    height: 2.5em;
     text-align: center;
     text-transform: uppercase;
-    margin: 1em 0 0 2em;
+    margin: 1em 0 0 .5em;
     padding-top: 3em;
 }
 .imageCaption p {
@@ -263,9 +267,9 @@ h4 {
     font-size: 1em;
     background: transparent;
     text-align: left;
-    width: 12em;
-    height: 13em;
-    margin: 2em 0 0 3em;
+    width: 10em;
+    height: 11em;
+    margin: 2em 0 0 1em;
 }
 
 .projectTitle a:hover p, .projectTitle a:focus, .imageCaption a:hover p {
@@ -274,15 +278,15 @@ h4 {
     z-index: 1;
 }
 .projectTitle img {
-    width: 20em;
-    height: 15em;
-    margin: 2em 0 0 4em;
+    width: 18em;
+    height: 13em;
+    margin: 2em 0 0 1em;
 }
 
 .imageCaption img {
-    width: 20em;
-    height: 15em;
-    margin: 2em 0 0 3em;
+    width: 18em;
+    height: 13em;
+    margin: 2em 0 0 1em;
 }
 /* Contact form
  --------------------------------------------------- */
@@ -326,14 +330,7 @@ input[type="tel"] {
     border: 1px solid gray;
 }
 input[type="password"] {
-    margin-left: .4em;
-    width: 18em;
-    padding: 7px;
-    border: 1px solid gray;
-}
-#username[type="text"] {
-    display: inline;
-    width: 15em;
+    width: auto;
     padding: 7px;
     border: 1px solid gray;
 }
@@ -356,6 +353,7 @@ textarea {
 }
 #subject {
     height: 2em;
+
 }
 #submitButton {
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
@@ -371,21 +369,6 @@ textarea {
     float: right;
     padding: .2em;
     margin: 0 1em 1em 0;
-}
-
-/* Form results */
-p.error, p.success {
-    font-weight: bold;
-    padding: 10px;
-    border: 1px solid;
-}
-p.error {
-    background: #ffc0c0;
-    color: #900;
-}
-p.success {
-    background: #b3ff69;
-    color: #4fa000;
 }
 
 /* About Members
@@ -417,7 +400,6 @@ p.success {
     margin: 1em 0 1em 1em;
     float: left;
     font-size: 1em;
-    overflow: none;
 }
 .leftList li {
     padding: .3em 0 .5em 0;
